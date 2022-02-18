@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+.header nav {
+	width: 180px;
+}
+
+.header ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.header li{
+	list-style-type: none;
+}
