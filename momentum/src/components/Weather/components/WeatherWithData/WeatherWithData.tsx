@@ -1,16 +1,15 @@
+import React from 'react';
 import { WeatherWithDataProps } from './WeatherWithData.types';
 import classes from '../../Weather.module.css';
-import React from 'react';
 
 
 
-export const WeatherWithData: React.FC<WeatherWithDataProps> = ({weather, city, changeHandler, keyPressHandler}) => {
-  return (
+export const WeatherWithData: React.FC<WeatherWithDataProps> = ({weather, city, changeHandler, keyPressHandler}) => (
     <div className={classes.weather}>
       <div>
         <i
           className={`${classes.icon} owf owf-${weather?.weatherId || null}`}
-        ></i>
+         />
         <span className={classes.temperature}>
           {`${weather?.temperature || null} °C`}{' '}
         </span>
@@ -30,4 +29,3 @@ export const WeatherWithData: React.FC<WeatherWithDataProps> = ({weather, city, 
       </div>
     </div>
   );
-};

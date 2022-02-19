@@ -1,1 +1,1 @@
-export { Audio, Video, Home } from './icons'
+export { AudioSVG, VideoSVG, HomeSVG } from "./icons";

@@ -8,8 +8,7 @@ export const WeatherError: React.FC<WeatherErrorProps> = ({
   city,
   changeHandler,
   keyPressHandler,
-}) => {
-  return (
+}) => (
     <div className={classes.weather}>
       <h3>Wrong city!</h3>
       <p>Enter correct city.</p>
@@ -21,4 +20,3 @@ export const WeatherError: React.FC<WeatherErrorProps> = ({
       />
     </div>
   );
-};

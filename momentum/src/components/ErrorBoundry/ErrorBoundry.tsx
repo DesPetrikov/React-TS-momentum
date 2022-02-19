@@ -1,29 +1,27 @@
-import {Component} from "react";
+import React, { Component } from "react";
 import { ErrorIndicator } from "../ErrorIndicator";
 
-// export type ErrorBoundryTypes = {
-// 	state: {
-// 		hasError: boolean
-// 	}
-// }
-export class ErrorBoundry extends Component {
-	state = {
-		hasError: false,
-	}
+export type ErrorBoundryState = {
+    hasError: boolean;
+};
 
-	componentDidCatch() {
-		this.setState({
-			hasError: true,
-		})
-	}
-	render() {
+export class ErrorBoundry extends Component<{}, ErrorBoundryState> {
+    constructor(props: {}) {
+        super(props);
+        this.state = { hasError: false };
+    }
 
-		if (this.state.hasError) {
-		  return <ErrorIndicator/>
-		}
-  
-		return this.props.children;
-	 }
+    componentDidCatch() {
+        this.setState({
+            hasError: true,
+        });
+    }
+
+    render() {
+        if (this.state.hasError) {
+            return <ErrorIndicator />;
+        }
+
+        return this.props.children;
+    }
 }
-
-

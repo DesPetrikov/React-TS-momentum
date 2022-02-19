@@ -11,8 +11,7 @@ import {Footer} from '../Footer';
 
 
 
-export const App: React.FC = () => {
-  return (
+export const App: React.FC = () => (
     <ErrorBoundry>
       <BrowserRouter>
         <Header />
@@ -24,6 +23,5 @@ export const App: React.FC = () => {
         <Footer />
       </BrowserRouter>
     </ErrorBoundry>
-  );
-}
+  )
 

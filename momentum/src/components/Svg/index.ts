@@ -1,11 +1,3 @@
-import { SvgMainAnchor } from "./SvgMainAnchor/SvgMainAnchor";
-import { SvgAudioAnchor } from "./SvgAudioAnchor/SvgAudioAnchor";
-import { SvgVideoAnchor } from "./SvgVideoAnchor/SvgVideoAnchor";
-
-
-export {
-	SvgMainAnchor,
-	SvgAudioAnchor,
-	SvgVideoAnchor
-	
-}
+export { audioClass } from "./SvgAudioAnchor";
+export { homeClass } from "./SvgMainAnchor";
+export { videoClass } from "./SvgVideoAnchor";
