@@ -1,9 +1,13 @@
-declare module '*.module.css' {
-	const classes: { [key: string]: string };
-	export default classes;
+/// <reference types="react-scripts" />
+declare module "*.module.css" {
+    const classes: { [key: string]: string };
+    export default classes;
 }
 
 declare module "*.svg" {
-	const content: any;
-	export default content;
- }
+    import React from "react";
+
+    export const ReactComponent: React.FunctionComponent<
+        React.SVGAttributes<SVGElement>
+    >;
+}
