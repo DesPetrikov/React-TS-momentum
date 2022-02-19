@@ -20,6 +20,7 @@
         "react",
         "@typescript-eslint"
     ],
+    "ignorePatterns": ["**/*.svg", "**/*.eot", "**/*.otf", "**/*.ttf", "**/*.woff", "**/*.css"],
     "rules": {
         "import/extensions": 0,
         "import/no-unresolved": 0,
@@ -29,6 +30,12 @@
             "namedComponents": "arrow-function",
             "unnamedComponents":"arrow-function"
         }],
-        "no-tabs": 0
+        "no-tabs": 0,
+        "react/jsx-props-no-spreading": 1,
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "react/react-in-jsx-scope": 1,
+        "no-unused-expressions": 0,
+        "react/destructuring-assignment": 0
     }
 }

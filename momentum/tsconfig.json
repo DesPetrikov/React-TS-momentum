@@ -20,7 +20,7 @@
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
-    "sourceRoot": "src",
+    "baseUrl": "src"
   },
   "include": [
     "src/components", "src/global.d.ts",
